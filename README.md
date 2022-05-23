@@ -10,5 +10,8 @@ This project was designed to make creation of Telegram bots based on NodeJS much
 4. [Understanding the context](/docs/UnderstandingTheContext.md)
 
 ### How to use:
-1. Fork or clone this repository
-2. Follow the documentation guides
+1. Install NodeJS v16.15.0
+2. Fork or clone this repository
+3. Follow the documentation guides to create the bot that you need
+4. Run `./gradlew build` in terminal
+5. After build was successfully finished, run `node ./build/js/packages/KotlinJsTelegrambotTemplate` (or some other name in case you changed `settings.gradle.kts`)

@@ -14,7 +14,7 @@ Chat commands can be registered in [ChatCommandsRegistration.kt](/src/main/kotli
 *Syntax:* `register("start") { ... }`
 
 Inline request answers can be registered in [InlineRequestsRegistration.kt](/src/main/kotlin/commandconfiguration/InlineRequestsRegistration.kt)\
-*Syntax:* `register("default") { ... }` *or* `register("answerOnlyToMessageWithNumbers", RegExp("\d+"))` 
+*Syntax:* `register("default") { ... }` *or* `register("answerOnlyToMessageWithNumbers", RegExp("\d+")) { ... }` 
 
 ## Event listeners
 ***
@@ -22,7 +22,7 @@ Inline request answers can be registered in [InlineRequestsRegistration.kt](/src
 ### Chat command listeners
 1. `onInit` (**Optional**) - executed right on the registration.<br />Supplied with [PrivateStaticContext](UnderstandingTheContext.md#PrivateStaticContext) argument as `it`.
 2. `beforeReply` (**Optional**) - executed before reply was done.<br />Supplied with [LocalChatContext](UnderstandingTheContext.md#LocalContext) argument as `it`.
-3. `reply` (**Required**) - executed on reply message configuration.<br />Supplied with *ChatCommandReplyBuilder* as `this` and[LocalChatContext](UnderstandingTheContext.md#LocalContext) as `it`.
+3. `reply` (**Required**) - executed on reply message configuration.<br />Supplied with *ChatCommandReplyBuilder* as `this` and [LocalChatContext](UnderstandingTheContext.md#LocalContext) as `it`.
 4. `afterReply` (**Optional**) - executed after reply was done and callback was received.<br />Supplied with [LocalChatContext](UnderstandingTheContext.md#LocalContext) argument as `it`. `LocalChatContext.sentMessage` field become available here if message was successfully sent.
 
 ### Inline request listeners
