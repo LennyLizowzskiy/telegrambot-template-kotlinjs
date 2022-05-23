@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="KotlinJsTelegrambotTemplate-16.13.0">
+    <output-path>$PROJECT_DIR$/build/libs</output-path>
+    <root id="archive" name="KotlinJsTelegrambotTemplate-16.13.0.jar">
+      <element id="module-output" name="KotlinJsTelegrambotTemplate.main" />
+    </root>
+  </artifact>
+</component>

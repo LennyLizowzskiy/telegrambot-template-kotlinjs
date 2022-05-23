@@ -1,0 +1,6 @@
+package telegrambot.messaging.inlineresults.inputmessagecontents
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+sealed class InputMessageContent
